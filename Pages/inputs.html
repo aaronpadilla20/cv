@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inputs</title>
+  </head>
+  <body>
+    <h1>Tipos de inputs</h1>
+    <table cellspacing=10>
+      <thead>
+        <tr>
+          <th>Input</th>
+          <th>Descripcion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="button"></td>
+          <td>Boton sin comportamiento en especifico</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td><p>
+            Casilla de seleccion se debe de utilizar el atributo <strong>value</strong>
+            para definir el valor que se enviara por este elemento.Se usa el atributo
+            <strong>checked</strong> para indicar si el elemento esta seleccionado.
+            Tambien se puede usar el atributo <strong>indeterminate</strong>(el cual
+            solo se puede establecer programaticamente) para indicar que la Casilla
+            esta en un estado indeterminado.
+          </p></td>
+        </tr>
+        <tr>
+          <td><input type="color"></td>
+          <td>Control para especificar un color.</td>
+        </tr>
+        <tr>
+          <td><input type="date"></td>
+          <td>Control para introducir una fecha(año,mes y dia, sin tiempo)</td>
+        </tr>
+        <tr>
+          <td><input type="datetime"></td>
+          <td>
+            <p>
+            Control para introducir una fecha y hora(horas,minutos,segundos y fraccion de segundos), basado
+            en la zona horaria UTC
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="datetime-local"></td>
+          <td>Control para introducir fecha y hora, sin zona horaria especifica</td>
+        </tr>
+        <tr>
+          <td><input type="email"></td>
+          <td>
+            <p>
+              Campo para introducir una direccion de correo electronico. El valor introducido se valida
+              para que contenga una cadena vacia o una direccion de correo valida antes de enviarse.
+              Las pseudo clases :invalid y :valid son aplicadas segun corresponda
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="file"></td>
+          <td>
+            <p>
+              Control usado para seleccionar un archivo. Se puede usar el atributo <strong>accept</strong>
+              para definir los tipos de archivos que el control podra seleccionar
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="hidden"></td>
+          <td>Control que no es mostrado en pantalla, pero cuyo valor es enviado al servidor</td>
+        </tr>
+        <tr>
+          <td><input type="image"></td>
+          <td>
+            <p>
+              Boton de envio de formulario con grafico. Se debe de usar el atributo <strong>src</strong>
+              para definir el origen de la imagen y el atributo <strong>alt</strong> para definir
+              un texto alternativo. Se puede usar los atributos <strong>height</strong> y
+              <strong>width</strong> para definir el tamaño de la imagen en pixeles
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="mont" name="" value=""></td>
+          <td>Control para introducir un mes y año, sin zona horaria especifica</td>
+        </tr>
+        <tr>
+          <td><input type="number" name="" value=""></td>
+          <td>Control para introducir un numero de punto flotante</td>
+        </tr>
+        <tr>
+          <td><input type="password" name="" value=""></td>
+          <td>
+            <p>
+              Control de linea simple cuyo valor permanece oculto. Se puede usar el atributos
+              <strong>maxlenght</strong> para especificar la longitud maxima del valor que
+              se puede introducir.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="" value=""></td>
+          <td>
+            <p>
+              Boton radio. Se debe usar el atributo <strong>value</strong> para definir
+              el valor que se enviara por este elemento. Se usa el atributo
+              <strong>checked</strong> para indicar si el elemento esta seleccionado
+              de forma predeterminada. Los botones radio que tengan el mismo valor
+              para su atributo <strong>name</strong> estan dentro del mismo "grupo
+              de botones radio". Solo un boton radio dentro de un grupo puede ser seleccionado
+              a la vez.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="range" name="" value=""></td>
+          <td>
+            <p>
+              Control para introducir un numero cuyo valor exacto no es importante.
+              Este control usa los siguientes valores predeterminados si no se especifica
+              cada atributo:
+              <ul>
+                <li>min: 0</li>
+                <li>max: 100</li>
+                <li>value: min + (max-min)/2, o min si max es menor que min</li>
+                <li>step: 1</li>
+              </ul>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="reset" name="" value=""></td>
+          <td>Boton que restaura los contenidos de un formulario a sus valores predeterminados</td>
+        </tr>
+        <tr>
+          <td><input type="search" name="" value=""></td>
+          <td>
+            <p>
+              Cuadro de texto de linea simple para introducir textos de busqueda. Los saltos de linea son eliminados
+              automaticamente del valor introducido
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="" value=""></td>
+          <td>Boton que envia el formulario</td>
+        </tr>
+        <tr>
+          <td><input type="tel" name="" value=""></td>
+          <td>
+            <p>
+              Control para introducir un numero telefonico. Los saltos de linea son eliminados
+              automaticamente del valor introducido, pero no hay otra sintaxis forzada. Se pueden
+              usar atributos como <strong>pattern</strong> y <strong>maxlenght</strong> para
+              restringir los valores introducidos en este control. Las pseudo-clases CSS: :valid y :invalid
+              son aplicadas segun corresponde
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" name="" value=""></td>
+          <td>
+            <p>
+              Campo de texto de linea simple. Los saltos de linea son eliminados automaticamente del valor
+              introducido
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="url" name="" value=""></td>
+          <td>
+            <p>
+              Campo para editar una URL. El valor introducido se valida para que contenga una cadena vacia o
+              una ruta URL absoluta antes de enviarse. Los saltos de linea y espacios en blanco al principio
+              o al final del valor son eliminados automaticamente. Se pueden usar atributos como <strong>pattern</strong>
+              y <strong>maxlenght</strong> para restringir los valores introducidos en el control. Las pseudo-clases
+              :valid y :invalid son aplicadas segun corresponda
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="time" name="" value=""></td>
+          <td>Control para introducir un valor de tiempo sin zona horaria especifica</td>
+        </tr>
+        <tr>
+          <td><input type="week" name="" value=""></td>
+          <td>
+            <p>
+              Control para introducir una fecha que consiste en numero de semana del año y numero de semana
+              sin zona horia especifica.
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
